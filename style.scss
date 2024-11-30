@@ -1,0 +1,53 @@
+html {
+    box-sizing: border-box;
+  }
+  
+  *, ::before, ::after {
+    box-sizing: inherit;
+  }
+  
+  body {
+    font-family: "Barlow", serif;
+    font-weight: 400;
+    font-style: normal;
+    font-size: 1rem;
+    line-height: 1.5;
+    color:aqua;
+  }
+  
+  h1, h2, h3, h4, h5, h6 {
+    font-family: "Barlow", serif;
+    font-weight: 800;
+    font-style: normal;
+  }
+  
+  .menu {
+      &__list {
+          margin: 0;
+          padding: 2px;
+          display: flex;
+          justify-content: center;
+          list-style: none;
+      }
+  
+      &__link {
+          display: block;
+          padding: ($spacer / 2) $spacer;
+          color: white;
+          text-decoration: none;
+          font-weight: bold;
+  
+          &:hover,
+          &:focus {
+              background-color: gray;
+          }
+      }
+  
+  }
+
+  .portfolio {
+    &__gallery {
+      display: grid;
+      grid-template-columns: 4;
+    }
+  }

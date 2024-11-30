@@ -1,35 +1,57 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="cs">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>omalovánky</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Matesovy říkanky</title>
 </head>
-<body>
-    <div class="container">
 
-        <!--Gallery-->
-        <div class="illustrations">
-            <img src="/images/omalovanky/01_Omal_zirafa_obalka.webp" alt="Omalovanky obalka">
-            <img src="/images/omalovanky/10_Omal_beruska.webp" alt="Omalovanky 10_Omal_beruska">
-            <img src="/images/omalovanky/13_Omal_krecek.webp" alt="Omalovanky 13_Omal_krecek">
-            <img src="/images/omalovanky/14_Omal_jezek2 copy.webp" alt="Omalovanky jezek">
-            <img src="/images/omalovanky/19_Omal_prase.webp" alt="Omalovanky 19_Omal_prase">
+<body>
+    <main class="main">
+
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/omalovanky/01_Omal_zirafa_obalka.webp" alt="Omalovanky obalka">
         </div>
-    
-        <!--Texts-->
-        <div class="description">
-            <div class="headline">
-                <h1>Matesovy říkanky pro děcka i pro mamky</h1>
-            </div>
-    
-            <div class="aboutProject">
-                <p>Matesovy říkanky jsou omalovánky, které kombinují básničky s černobílými ilustracemi připravenými k vybarvení. Na každé stránce najdete jednu básničku a odpovídající ilustraci ve stylu inspirovaném linorytem. Jedním z charakteristických prvků je přítomnost jednoho či dvou barevných detailů v každém obrázku, který doplňuje celkovou kompozici.</p>
-                <p>Autor básní: Martin Kašík</p>
-                <p>Grafická úprava: <a href="www.knihodilna.cz">Hanka Hlouchová, Knihodílna</a></p>
-            </div>
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/omalovanky/10_Omal_beruska.webp" alt="Omalovanky 10_Omal_beruska">
         </div>
-    </div>
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/omalovanky/13_Omal_krecek.webp" alt="Omalovanky 13_Omal_krecek">
+        </div>
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/omalovanky/14_Omal_jezek2 copy.webp" alt="Omalovanky jezek">
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/omalovanky/19_Omal_prase.webp" alt="Omalovanky 19_Omal_prase">
+        </div>
+        </div>
+    </section>
+        
+    <!-- Description -->
+    <section class="description">
+        <h2 class="description__title">Matesovy říkanky pro děcka i pro mamky</h2>
+        
+        <div class="description__content">
+            <p>Matesovy říkanky jsou omalovánky, které kombinují básničky s černobílými ilustracemi připravenými k vybarvení. Na každé stránce najdete jednu básničku a odpovídající ilustraci ve stylu inspirovaném linorytem. Jedním z charakteristických prvků je přítomnost jednoho či dvou barevných detailů v každém obrázku, který doplňuje celkovou kompozici.</p>
+            
+            <p>Autor básní: Martin Kašík</p>
+            <p>Grafická úprava: <a href="www.knihodilna.cz">Hanka Hlouchová, Knihodílna</a></p>
+        </div>
+    </section>
+
+
+    <!-- Navigation -->
+    <nav class="project-navigation">
+        <a href="previous-project.html" class="project-navigation__link project-navigation__link--previous">&larr; Předchozí projekt</a>
+        <a href="next-project.html" class="project-navigation__link project-navigation__link--next">Následující projekt &rarr;</a>
+    </nav>
+
+    </main>
 
 </body>
 </html>

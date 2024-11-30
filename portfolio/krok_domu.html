@@ -3,38 +3,56 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Krok domů</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
+    <title>Společně po svých</title>
 </head>
 
 <body>
-    <div class="container">
-
-        <!--Gallery-->
-        <div class="illustrations">
-            <img src="/images/krok_domu/komiks_Katerina-1.webp" alt="komiks Kateřina 1">
-            <img src="/images/krok_domu/komiks_Katerina-4.webp" alt="komiks Kateřina 4">
-            <img src="/images/krok_domu/komiks_Katerina-7.webp" alt="komiks Kateřina 7">
-            <img src="/images/krok_domu/Karolina.webp" alt="portret Karolina">
+    <main class="main">
+    
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/krok_domu/komiks_Katerina-1.webp" alt="komiks Kateřina 1">
         </div>
-    
-        <!--Texts-->
-        <div class="description">
-            <div class="headline">
-                <h1>Brožura pro nadační fond Krok domů</h1>
-            </div>
-    
-            <div class="aboutProject">
-                <p>Pro nadační fond Krok domů byla vytvořena brožura určená sociálním pracovníkům, kteří pomáhají mladým dospělým po odchodu z dětského domova. Součástí mé práce byl komiks, který vypráví příběh Kateřiny od jejího života v dětském domově až po výzvy spojené se vstupem do samostatného života.</p>
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/krok_domu/komiks_Katerina-4.webp" alt="komiks Kateřina 4">
+        </div>
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/krok_domu/komiks_Katerina-7.webp" alt="komiks Kateřina 7">
+        </div>
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/krok_domu/Karolina.webp" alt="portret Karolina">
+        </div>
+    </section>
 
-                <p>Ilustrace v brožuře jsou laděny do tónů fialové a evokují kresbu pastelkou, čímž podtrhují citlivý a osobní charakter obsahu. Kromě komiksu jsem vytvořila také portréty mladých dospělých a pracovníků nadace, které přibližují konkrétní příběhy a tváře spojené s tématem. Další ilustrace slouží jako vizuální předěly mezi jednotlivými kapitolami, a zároveň zdobí obálku, která svým stylem sjednocuje celou brožuru.</p>
-                    
-                <p>Celkový vizuál brožury propojuje emotivní příběhy s užitečnými informacemi a vytváří praktický nástroj pro lepší porozumění potřebám mladých dospělých v této náročné životní etapě.</p>
+
+    <!-- Description -->
+    <section class="description">
+        <h2 class="description__title">Společně po svých</h2>
+        
+        <div class="description__content">
+            <p>Pro nadační fond Krok domů byla vytvořena brožura určená sociálním pracovníkům, kteří pomáhají mladým dospělým po odchodu z dětského domova. Součástí mé práce byl komiks, který vypráví příběh Kateřiny od jejího života v dětském domově až po výzvy spojené se vstupem do samostatného života.</p>
+
+            <p>Ilustrace v brožuře jsou laděny do tónů fialové a evokují kresbu pastelkou, čímž podtrhují citlivý a osobní charakter obsahu. Kromě komiksu jsem vytvořila také portréty mladých dospělých a pracovníků nadace, které přibližují konkrétní příběhy a tváře spojené s tématem. Další ilustrace slouží jako vizuální předěly mezi jednotlivými kapitolami, a zároveň zdobí obálku, která svým stylem sjednocuje celou brožuru.</p>
                 
-                <p>Zadavatel: <a href="https://www.krokdomu.cz/">Nadační fond krok domů</a></p>
-
-            </div>
+            <p>Celkový vizuál brožury propojuje emotivní příběhy s užitečnými informacemi a vytváří praktický nástroj pro lepší porozumění potřebám mladých dospělých v této náročné životní etapě.</p>
+            
+            <p>Zadavatel: <a href="https://www.krokdomu.cz/">Nadační fond krok domů</a></p>
         </div>
-    </div>
+    </section>
+
+    
+    <!-- Navigation -->
+    <nav class="project-navigation">
+        <a href="previous-project.html" class="project-navigation__link project-navigation__link--previous">&larr; Předchozí projekt</a>
+        <a href="next-project.html" class="project-navigation__link project-navigation__link--next">Následující projekt &rarr;</a>
+    </nav>
+
+    </main>
 
 </body>
 </html>

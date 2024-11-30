@@ -3,38 +3,48 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/style.css">
     <title>Karneval v Benátkách</title>
 </head>
 
 <body>
-    <div class="container">
+    <main class="main">
 
-    <!--Gallery-->
-    <div class="illustrations">
-        <img src="/images/benatky/benatky.webp" alt="Karneval v Benatkach">
-    </div>
-
-    <!--Texts-->
-    <div class="description">
-        <div class="headline">
-            <h1>Karneval v Benátkách</h1>
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/benatky/benatky.webp" alt="Karneval v Benátkách">
         </div>
+    </section>
+
+    <!-- Description -->
+    <section class="description">
+        <h2 class="description__title">Karneval v Benátkách</h2>
         
-        <div class="aboutProject">
+        <div class="description__content">
             <p>Ilustrace na téma Karneval v Benátkách byla mým příspěvkem do kalendáře, který vznikl pod vedením týmu Creative Hub. Tento projekt propagoval digitální zušlechťování tiskovin a široké možnosti moderního tisku. Každý měsíc ilustroval jiný autor, přičemž úkolem bylo přenést energii a atmosféru benátského karnevalu do zářivých barev.</p>
 
             <p>Použila jsem především tóny fialové, oranžové a žluté, které maximálně využívají potenciál tiskárny Konica Minolta a její schopnosti reprodukovat odstíny mimo běžný gamut.</p>
                 
-            <p>Kalendář získal na soutěži Kalendář roku tři prestižní ocenění:
-                <ul>
-                    <ul>1. místo v kategorii Digitální tisk,</ul>
-                    <ul>2. místo v kategorii VOX POPULI,</ul>
-                    <ul>3. místo v kategorii Kvalita tisku a celkové zhotovení.</ul>
-                </ul>
-            </p>
+            <p>Kalendář získal na soutěži Kalendář roku tři ocenění:</p>
+            <ul class="description__list">
+                <li class="description__list-item">1. místo v kategorii Digitální tisk,</li>
+                <li class="description__list-item">2. místo v kategorii VOX POPULI,</li>
+                <li class="description__list-item">3. místo v kategorii Kvalita tisku a celkové zhotovení.</li>
+            </ul>
         </div>
-    </div>
-</div>
+    </section>
+
+<!-- Navigation -->
+<nav class="project-navigation">
+    <a href="previous-project.html" class="project-navigation__link project-navigation__link--previous">&larr; Předchozí projekt</a>
+    <a href="next-project.html" class="project-navigation__link project-navigation__link--next">Následující projekt &rarr;</a>
+</nav>
+    
+</main>
 
 </body>
 </html>

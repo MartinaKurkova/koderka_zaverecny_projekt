@@ -3,8 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="/css/style.css">
     <title>Portfolio</title>
 </head>
+
 <body>
     <header class="header">
 		<h1 class="header__logo">Martina Kurková</h1>
@@ -12,7 +17,7 @@
 
     <nav class="menu">
 		<ul class="menu__list">
-			<li class="menu__item"><a href="#" class="menu__link">Portfolio</a></li>
+			<li class="menu__item"><a href="/" class="menu__link">Portfolio</a></li>
 			<li class="menu__item"><a href="#" class="menu__link">O mně</a></li>
 			<li class="menu__item"><a href="#" class="menu__link">Obchod</a></li>
             <li class="menu__item"><a href="#" class="menu__link">Kontakt</a></li>
@@ -22,20 +27,77 @@
     <main class="main">
 
 <!--Gallery-->
-        <div class="portfolio">
-            <img src="/images/ukziz/" alt="Příběh půdy">
-            <img src="/images/omalovanky/01_Omal_zirafa_obalka.webp" alt="Omalovánky">
-            <img src="/images/krajanek/" alt="Krajánek">
-            <img src="/images/krok_domu/Komiks_Katka7.jpg" alt="Krok domů">
-            <img src="/images/gaiman/Stardust_Gaiman.webp" alt="Gaiman">
-            <img src="/images/benatky/benatky.jpg" alt="Benatky">
-            <img src="/images/taboo/taboo_janis_1.jpg" alt="Taboo">
-            <img src="/images/gramla/gramla_00.jpg" alt="Gramla">
-            <img src="/images/vino/" alt="Vino">
-            <img src="/images/vino/" alt="Vino">
-            <img src="/images/nzm/voda-5.jpg" alt="Statistiky">
-            <img src="/images/pexeso/pexeso_ptaci_karticky28.jpg" alt="Pexesa">
-        </div>
+<section class="portfolio">
+    <div class="portfolio__gallery">
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/ukziz/gal.png" alt="Příběh půdy">
+                <figcaption class="portfolio__caption">Příběh půdy</figcaption>
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/omalovanky/01_Omal_zirafa_obalka.webp" alt="Omalovánky">
+                <figcaption class="portfolio__caption">Matesovy říkanky</figcaption> 
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/krajanek/Krajanek_zavist_gal.webp" alt="Krajánek">
+                <figcaption class="portfolio__caption">Časopis Krajánek</figcaption>
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/krok_domu/Komiks_Katka7.jpg" alt="Krok domů">
+                <figcaption class="portfolio__caption">Společně po svých</figcaption>
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/gaiman/Stardust_Gaiman.webp" alt="Gaiman">
+                <figcaption class="portfolio__caption">Neil Gaiman</figcaption> 
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/benatky/benatky.jpg" alt="Benatky">
+                <figcaption class="portfolio__caption">Karneval v Benátkách</figcaption> 
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/taboo/taboo_janis_1.jpg" alt="Taboo">
+                <figcaption class="portfolio__caption">Taboo</figcaption> 
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/gramla/gramla_00.jpg" alt="Gramla">
+                <figcaption class="portfolio__caption">Gramla</figcaption>
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/vino/odrudy_1.webp" alt="Vinarstvi">
+                <figcaption class="portfolio__caption">Vinařství</figcaption>
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/nzm/6_7_pole-1.webp" alt="Statistiky">
+                <figcaption class="portfolio__caption">Obrázkové statistiky</figcaption>
+            </figure>
+        </a>
+        <a href="#" class="portfolio__link">
+            <figure class="portfolio__figure">
+                <img class="portfolio__image" src="/images/pexeso/ptaci/pexeso_ptaci_karticky10_web.jpg" alt="Pexesa">
+                <figcaption class="portfolio__caption">Pexesa</figcaption> 
+            </figure>
+        </a>
+    </div>
+</section>
+
 
 	</main>
 

@@ -6,35 +6,42 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="/style.css">
     <title>Časopis Krajánek</title>
 </head>
 
 <body>
-    <div class="container">
+    <main class="main">
 
-    <!--Gallery-->
-    <div class="illustrations">
-        <img src="images_portfolio/oskar/oskare_plav_obalka.jpg" alt="Oskare, plav! obalka">
-
-    </div>
-
-    <!--Texts-->
-    <div class="description">
-        <div class="headline">
-            <h1>Časopis Krajánek</h1>
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/krajanek/Krajanek_zavist.webp" alt="Rozhledna Závist">
         </div>
-
-        <div class="aboutProject">
-            <p>Kniha Oskare, plav! vypráví příběh malého tučňáka Oskara, který překonává svůj strach z plavání. Příběh je hravý a motivující, určený dětem, které se potýkají s vlastními obavami a učí se novým dovednostem.</p>
-
-            <p>Jsem autorkou nejen ilustrací, ale také samotného námětu knihy. Ilustrace jsou vytvořeny ve vektorové grafice a dominují jim tóny modré a oranžové, které podtrhují kontrast mezi ledovým světem tučňáků a vřelostí Oskarova příběhu. Kniha je navíc oživena pop-up prvky na každé stránce, což přidává čtení další rozměr a zvyšuje interaktivní zážitek dětí.</p>
-                
-            <p>Kniha Oskare, plav! byla oceněna za svou originalitu a zařazena do katalogu Nejlepší knihy dětem, který vybírá výjimečné publikace pro mladé čtenáře.</p>
-
+        <div class="gallery__item">
+            <img class="gallery__image" src="/images/krajanek/Polednik_1.webp" alt="Rozhledna Poledník">
         </div>
-    </div>
-</div>
+    </section>
+
+    <!-- Description -->
+    <section class="description">
+        <h2 class="description__title">Časopis Krajánek</h2>
+        
+        <div class="description__content">
+            <p>Pro dětský časopis Krajánek, který je určen českým dětem žijícím v zahraničí, tvořím ilustrace pro rubriku Putování českou krajinou. Časopis pomáhá udržovat povědomí o české kultuře, jazyce a tradicích a zábavnou formou přibližuje české reálie dětem ve věku 5 až 12 let.</p>
+            
+            <p>Rubrika se věnuje českým rozhlednám a v každém čísle představuje jednu z nich - její historii, zajímavosti a okolí. Ilustrace jsou digitální, ale stylizované tak, aby napodobovaly techniku vyškrabávání (scratchboard), a jsou doplněné několika barevnými tóny, které podtrhují detail a atmosféru každého motivu.</p>
+        </div>
+    </section>
+
+
+    <!-- Navigation -->
+    <nav class="project-navigation">
+        <a href="previous-project.html" class="project-navigation__link project-navigation__link--previous">&larr; Předchozí projekt</a>
+        <a href="next-project.html" class="project-navigation__link project-navigation__link--next">Následující projekt &rarr;</a>
+    </nav>
+
+    </main>
 
 </body>
 </html>
