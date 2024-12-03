@@ -1,0 +1,142 @@
+/* Reset stylů */
+html {
+  box-sizing: border-box;
+}
+
+*, ::after, ::before {
+  box-sizing: inherit;
+}
+
+body {
+  font-family: "Barlow", serif;
+  font-weight: 400;
+  font-style: normal;
+  font-size: 1rem;
+  line-height: 1.5;
+  color: #c25a5a;
+  margin: auto 1.5rem;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Barlow", serif;
+  font-weight: 800;
+  font-style: normal;
+}
+
+/* Header styling */
+.header {
+  background-color: #343434;
+  color: white;
+  padding: 1rem;
+}
+
+.header__container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header__logo {
+  font-size: 1.5rem;
+  font-weight: bold;
+  text-decoration: none;
+  color: white;
+}
+
+/* Navigation menu */
+.menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column; /* Default for mobile */
+  position: fixed;
+  top: 0;
+  right: -100%;
+  height: 100vh;
+  width: 200px;
+  background-color: whitesmoke;
+  transition: right 0.3s ease;
+}
+
+.menu--hidden {
+  right: -100%; /* Skryté menu */
+}
+
+.menu--visible {
+  right: 0; /* Viditelné menu */
+}
+
+.menu__item {
+  margin: 1rem 0;
+}
+
+.menu__link {
+  text-decoration: none;
+  color: #333;
+  font-size: 1.2rem;
+  padding-left: 20px;
+}
+
+/* Desktop-specific styling */
+@media (min-width: 768px) {
+  .menu {
+    position: static; /* Vypne pevnou pozici */
+    display: flex;
+    flex-direction: row; /* Horizontální menu */
+    height: auto;
+    width: auto;
+    background-color: transparent; /* Transparentní pozadí */
+  }
+
+  .menu--hidden,
+  .menu--visible {
+    right: auto; /* Zajistí odstranění pravého posunu */
+  }
+
+  .menu__item {
+    margin: 0 1rem;
+  }
+
+  .menu__link {
+    color: white;
+    padding-left: 0;
+  }
+
+  .menu__hamburger {
+    display: none !important; /* Zajistí, že hamburger menu bude skryto */
+  }
+}
+
+
+
+/* Hamburger menu */
+.menu__hamburger {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  height: 30px;
+  width: 40px;
+  cursor: pointer;
+}
+
+.menu__line {
+  height: 4px;
+  width: 100%;
+  background-color: cornflowerblue;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+}
+
+/* Hamburger animation when active */
+.menu__hamburger.active .menu__line:nth-child(1) {
+  transform: translateY(10px) rotate(45deg);
+}
+
+.menu__hamburger.active .menu__line:nth-child(2) {
+  opacity: 0;
+}
+
+.menu__hamburger.active .menu__line:nth-child(3) {
+  transform: translateY(-10px) rotate(-45deg);
+}

@@ -6,30 +6,26 @@
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Barlow:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="/style.css">
-    <title>Gramla</title>
+    <link rel="stylesheet" href="/css/style.css">
+    <title>Portfolio</title>
 </head>
 
 <body>
+    <header class="header">
+        <h1 class="header__logo">Martina Kurková</h1>
+    </header>
+
+    <nav class="menu">
+        <ul class="menu__list">
+            <li class="menu__item"><a href="/" class="menu__link">Portfolio</a></li>
+            <li class="menu__item"><a href="/o_mne.html" class="menu__link">O mně</a></li>
+            <li class="menu__item"><a href="/obchod.html" class="menu__link">Obchod</a></li>
+            <li class="menu__item"><a href="/kontakt.html" class="menu__link">Kontakt</a></li>
+        </ul>
+    </nav>
+
+    
     <main class="main">
-
-    <!-- Gallery -->
-    <section class="gallery">
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/gramla/gramla_01.webp" alt="Gramla objekt">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/gramla/gramla_02.webp" alt="Gramla cela">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/gramla/gramla_04.webp" alt="Gramla detail">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/gramla/gramla_tisk_330x700.webp" alt="Gramla tisk">
-        </div>
-    </section>
-
-
     <!-- Description -->
     <section class="description">
         <h2 class="description__title">Gramla</h2>
@@ -42,6 +38,37 @@
             <p>Gramla je originální spojení edukace, zábavy a inovativních tiskových technologií.</p>
         </div>
     </section>
+    
+    <!-- Gallery -->
+    <section class="gallery">
+        <div class="gallery__item">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/gramla/gramla_01.webp">
+                <img class="gallery__image" src="/Thumbnails/gramla/gramla_01.webp" alt="Gramla objekt">
+            </a>
+        </div>
+        <div class="gallery__item">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/gramla/gramla_02.webp">
+                <img class="gallery__image" src="/Thumbnails/gramla/gramla_02.webp" alt="Gramla cela">
+            </a>
+        </div>
+        <div class="gallery__item">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/gramla/gramla_04.webp">
+                <img class="gallery__image" src="/Thumbnails/gramla/gramla_04.webp" alt="Gramla detail">
+            </a>
+        </div>
+        <div class="gallery__item">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/gramla/gramla_tisk_330x700.webp">
+                <img class="gallery__image" src="/Thumbnails/gramla/gramla_tisk_330x700.webp" alt="Gramla tisk">
+            </a>
+        </div>
+    </section>
+    
+    <!-- Include fslightbox.js in your project -->
+    <script src="https://cdn.jsdelivr.net/npm/fslightbox"></script>
+    
+
+
+
 
     <!-- Navigation -->
     <nav class="project-navigation">
@@ -50,6 +77,8 @@
     </nav>
 
     </main>
+
+    <script src="fslightbox.js"></script>
 
 </body>
 </html>
