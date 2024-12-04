@@ -24,9 +24,8 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
-/* Header styling */
+/* Header*/
 .header {
-  background-color: #343434;
   color: white;
   padding: 1rem;
 }
@@ -41,31 +40,33 @@ h1, h2, h3, h4, h5, h6 {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: white;
+  color: purple;
+  text-transform: uppercase;
 }
 
-/* Navigation menu */
+/* Menu */
 .menu {
   list-style: none;
   margin: 0;
-  padding: 0;
+  padding-top: 4rem;
   display: flex;
-  flex-direction: column; /* Default for mobile */
+  flex-direction: column; 
   position: fixed;
   top: 0;
   right: -100%;
   height: 100vh;
   width: 200px;
-  background-color: whitesmoke;
+  background-color: white;
+  box-shadow: -4px 0 10px rgba(0, 0, 0, 0.2);
   transition: right 0.3s ease;
 }
 
 .menu--hidden {
-  right: -100%; /* Skryté menu */
+  right: -100%;
 }
 
 .menu--visible {
-  right: 0; /* Viditelné menu */
+  right: 0; 
 }
 
 .menu__item {
@@ -79,20 +80,22 @@ h1, h2, h3, h4, h5, h6 {
   padding-left: 20px;
 }
 
-/* Desktop-specific styling */
-@media (min-width: 768px) {
+/* Desktop */
+@media screen and (min-width: 700px) {
   .menu {
-    position: static; /* Vypne pevnou pozici */
+    position: static; 
     display: flex;
     flex-direction: row; /* Horizontální menu */
     height: auto;
     width: auto;
     background-color: transparent; /* Transparentní pozadí */
+    box-shadow: none;
   }
 
   .menu--hidden,
   .menu--visible {
-    right: auto; /* Zajistí odstranění pravého posunu */
+    right: auto;
+    padding: 0;
   }
 
   .menu__item {
@@ -100,7 +103,7 @@ h1, h2, h3, h4, h5, h6 {
   }
 
   .menu__link {
-    color: white;
+    color: #333;;
     padding-left: 0;
   }
 
@@ -124,7 +127,7 @@ h1, h2, h3, h4, h5, h6 {
 .menu__line {
   height: 4px;
   width: 100%;
-  background-color: cornflowerblue;
+  background-color: #333;
   transition: transform 0.3s ease, opacity 0.3s ease;
 }
 
@@ -139,4 +142,20 @@ h1, h2, h3, h4, h5, h6 {
 
 .menu__hamburger.active .menu__line:nth-child(3) {
   transform: translateY(-10px) rotate(-45deg);
+}
+
+
+
+.footer {
+  background-color: purple;
+  color: white;
+  text-align: center;
+  padding: 1rem;
+  margin: 0;
+  margin-top: 2rem;
+
+  &__text {
+      margin: 0;
+      font-size: 0.8rem;
+  }
 }

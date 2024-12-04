@@ -1,0 +1,48 @@
+@use "colors";
+@use "base";  
+
+.form {
+    &__body {
+      display: flex;
+      flex-direction: column;
+      gap: 0.8em;
+    }
+
+    &__input,
+    &__textarea {
+      width: 100%;
+      padding: 10px;
+      font-size: 0.8rem;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+    }
+
+
+    &__label {
+      font-weight: 600;
+      color: rgb(131, 129, 129);
+  }
+
+  &__button {
+    font-size: 1rem;
+    padding: 0.5rem;
+    color: white;
+    background-color: purple;
+    border: none;
+    border-radius: 5px;
+  }
+  
+  &__button:hover {
+    background-color: rgb(78, 1, 78);
+  }
+}
+
+.data__button {
+  display: inline-block;
+  background-color: purple;
+  color: white;
+  text-decoration: none;
+  padding: 0.3rem 0.8rem;
+  border-radius: 5px;
+  margin-right: 1rem;
+}

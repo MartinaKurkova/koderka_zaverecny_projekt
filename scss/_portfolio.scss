@@ -1,0 +1,49 @@
+@use "colors";
+@use "base";  
+
+.portfolio {
+    &__gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        gap: 1rem; 
+    }
+
+    &__figure {
+        position: relative; 
+        aspect-ratio: 1 / 1;
+        overflow: hidden;
+        margin: 0;
+        z-index: 1;
+    }
+
+    &__image {
+    width: 100%;
+        height: 100%;
+        object-fit: cover;
+        display: block;
+        transition: transform 0.3s ease; 
+    }
+
+    &__caption {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        right: 0;
+        background: rgba(128, 0, 128, 0.5); 
+        color: white;
+        text-align: center;
+        padding: 0.625rem;
+        font-size: 0.8rem;
+        transform: translateY(100%); 
+        transition: transform 0.3s ease;
+    }
+
+    &__figure:hover .portfolio__caption {
+        transform: translateY(0); 
+    }
+
+    __figure:hover .portfolio__image {
+        transform: scale(1.1); 
+    }
+}
+
