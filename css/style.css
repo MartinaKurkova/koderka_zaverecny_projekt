@@ -1,4 +1,3 @@
-@charset "UTF-8";
 html {
   box-sizing: border-box;
 }
@@ -14,7 +13,7 @@ body {
   font-size: 1rem;
   line-height: 1.5;
   color: #0D0D0D;
-  margin: auto 1.5rem;
+  margin: auto 0;
   padding: 0;
 }
 
@@ -24,24 +23,30 @@ h1, h2, h3, h4, h5, h6 {
   font-style: normal;
 }
 
+.main {
+  margin: 1.5rem;
+}
+
 /* Header*/
 .header {
   color: white;
-  padding: 1rem;
+  padding: 1.5rem;
 }
-
 .header__container {
   display: flex;
   justify-content: space-between;
   align-items: center;
+  border-bottom: 1px solid black;
 }
-
 .header__logo {
   font-size: 1.5rem;
   font-weight: bold;
   text-decoration: none;
-  color: purple;
   text-transform: uppercase;
+}
+.header__link {
+  text-decoration: none;
+  color: purple;
 }
 
 /* Menu */
@@ -61,19 +66,15 @@ h1, h2, h3, h4, h5, h6 {
   transition: right 0.3s ease;
   z-index: 999;
 }
-
 .menu--hidden {
   right: -100%;
 }
-
 .menu--visible {
   right: 0;
 }
-
 .menu__item {
   margin: 1rem 0;
 }
-
 .menu__link {
   text-decoration: none;
   color: #333;
@@ -92,8 +93,7 @@ h1, h2, h3, h4, h5, h6 {
     background-color: transparent;
     box-shadow: none;
   }
-  .menu--hidden,
-  .menu--visible {
+  .menu--hidden, .menu--visible {
     right: auto;
     padding: 0;
   }
@@ -110,10 +110,10 @@ h1, h2, h3, h4, h5, h6 {
 }
 /* Hamburger menu */
 .menu__hamburger {
-  position: absolute; /* Nebo fixed, pokud je potřeba */
-  top: 1rem; /* Uprav pozici podle designu */
-  right: 1rem; /* Uprav pozici podle designu */
-  z-index: 1000; /* Vyšší než menu */
+  position: absolute;
+  top: 2rem;
+  right: 1rem;
+  z-index: 1000;
   display: flex;
   flex-direction: column;
   justify-content: space-around;
@@ -146,11 +146,10 @@ h1, h2, h3, h4, h5, h6 {
   background-color: purple;
   color: white;
   text-align: center;
-  padding: 1rem;
-  margin: 0;
-  margin-top: 2rem;
+  padding: 2rem;
+  margin: 0 !important;
 }
-.footer__text {
+.footer__text, .footer__claim {
   margin: 0;
   font-size: 0.8rem;
 }
@@ -193,6 +192,23 @@ h1, h2, h3, h4, h5, h6 {
 }
 .portfolio __figure:hover .portfolio__image {
   transform: scale(1.1);
+}
+
+.gallery {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 1rem;
+}
+.gallery__image {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: cover;
+     object-fit: cover;
+  display: block;
+}
+.gallery__item:first-child {
+  grid-column: span 2;
+  grid-row: span 2;
 }
 
 .form__body {
