@@ -2,17 +2,35 @@
 @use "base";  
 
 .about {
-    display: grid; /* Pokud má být layout v gridu */
-  grid-template-columns: 1fr; /* Jeden sloupec */
-  width: 100%; /* Kontejner se přizpůsobí šířce stránky */
-  max-width: 1100px; /* Maximální šířka na větších obrazovkách */
-  margin: 0 auto; 
+  display: grid; 
+  grid-template-columns: 1fr;
 
-    &__image {
-        max-width: 100%; 
-        height: auto;   
-        display: block;  
-        margin: 0 auto;  
-    }
+  &__portrait {
+      max-width: 100%; 
+      height: auto;    
+      margin: 0 auto;  
+  }
+}
+
+@media screen and (min-width:50rem){
+  .about {
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  
+  &__headline {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  
+  &__image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+
+  &__text {
+    grid-row: 2/3;
+    grid-column: 1/2;
+  }
+}
 }
 

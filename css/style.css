@@ -309,7 +309,7 @@ h2 {
   color: #333;
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5rem) {
   .contact__container {
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -321,5 +321,33 @@ h2 {
   }
   .data__title {
     margin: 1rem 0;
+  }
+}
+.about {
+  display: grid;
+  grid-template-columns: 1fr;
+}
+.about__portrait {
+  max-width: 100%;
+  height: auto;
+  margin: 0 auto;
+}
+
+@media screen and (min-width: 50rem) {
+  .about {
+    grid-template-columns: 2fr 1fr;
+    gap: 1rem;
+  }
+  .about__headline {
+    grid-column: 1/-1;
+    grid-row: 1/2;
+  }
+  .about__image {
+    grid-column: 2/3;
+    grid-row: 2/3;
+  }
+  .about__text {
+    grid-row: 2/3;
+    grid-column: 1/2;
   }
 }/*# sourceMappingURL=style.css.map */
