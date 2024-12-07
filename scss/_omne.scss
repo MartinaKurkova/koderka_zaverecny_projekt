@@ -1,0 +1,18 @@
+@use "colors";
+@use "base";  
+
+.about {
+    display: grid; /* Pokud má být layout v gridu */
+  grid-template-columns: 1fr; /* Jeden sloupec */
+  width: 100%; /* Kontejner se přizpůsobí šířce stránky */
+  max-width: 1100px; /* Maximální šířka na větších obrazovkách */
+  margin: 0 auto; 
+
+    &__image {
+        max-width: 100%; 
+        height: auto;   
+        display: block;  
+        margin: 0 auto;  
+    }
+}
+

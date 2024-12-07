@@ -1,15 +1,21 @@
 @use"colors";
 
 .footer {
-    background-color: purple;
+    background-color: colors.$color-secondary;
     color: white;
     text-align: center;
-    padding: 2rem;
-    margin: 0 !important;
+    margin: 0;
+    padding: 1.5rem;
+    width: 100%; 
   
     &__text,
     &__claim {
         margin: 0;
         font-size: 0.8rem;
     }
+  }
+
+  .wrapper {
+    position: relative;
+    min-height: 100vh; 
   }

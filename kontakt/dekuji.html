@@ -1,6 +1,6 @@
 ---
 layout: moje-sablona.njk
-title: Kontakt
+title: Děkuji
 ---
 
     <div class="contact__container">
@@ -15,36 +15,13 @@ title: Kontakt
             </div>
         </section>
     
-        <!-- Sekce formuláře -->
-        <section class="form">
-            <h2 class="form__title">Kontaktní formulář</h2>
-          
-            <form class="form__body" method="post" action="https://submit-form.com/V2KYpasN7">
-              <!-- Skryté vstupy -->
-              <input type="hidden" name="_redirect" value="http://localhost:8080/kontakt/dekuji/">
-              <input type="hidden" name="_append" value="false">
-          
-              <!-- Jméno a příjmení -->
-              <label class="form__label" for="jmeno">Jméno a příjmení</label>
-              <input class="form__input" type="text" name="jmeno" id="jmeno" placeholder="Jméno a příjmení" required>
-          
-              <!-- E-mail -->
-              <label class="form__label" for="email">Kontaktní e-mail</label>
-              <input class="form__input" type="email" name="email" id="email" placeholder="Vaše e-mailová adresa" required>
-          
-              <!-- Předmět zprávy -->
-              <label class="form__label" for="subject">Předmět zprávy</label>
-              <input class="form__input" type="text" name="subject" id="subject" placeholder="Typ poptávky">
-          
-              <!-- Zpráva -->
-              <label class="form__label" for="message">Vaše zpráva</label>
-              <textarea class="form__textarea" name="message" id="message" placeholder="Vaše zpráva" rows="10" required></textarea>
-          
-              <!-- Tlačítko odeslat -->
-              <button class="form__button">Odeslat</button>
-            </form>
-          </section>
-          
+        <!-- Děkuji -->
+        <section class="thanks">
+            <h2 class="thanks__title">Děkuji, váš fromulář byl odeslán.</h2>
+            <p class="thanks__text">Brzy se vám ozvu.</p>
+            <a class="thanks__link" href="/kontakt/">Zpět na kontaktní formulář</a>
+
+        </section>
     
         <!-- Sekce kontaktních údajů -->
         <section class="data">

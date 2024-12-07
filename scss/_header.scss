@@ -4,6 +4,9 @@
 .header {
     color: white;
     padding: 1.5rem;
+    margin: 0;
+    padding: 1.5rem;
+    width: 100%; 
   
   
     &__container {
@@ -62,6 +65,7 @@
       font-size: 1.2rem;
       padding-left: 20px;
     }
+
 }
 
   
@@ -88,47 +92,69 @@
       }
     
       &__link {
-        color: #333;;
+        color: #333;
         padding-left: 0;
       }
     
       &__hamburger {
         display: none !important; 
       }
+
+      &__link:hover {
+        font-weight: bold;
+      }
+
+      &__item:last-child .menu__link {
+        color: white; 
+        background-color: purple;
+        padding: 0.5rem 1rem;
+        border-radius: 10px;
+      }
+  
     }
 }
   
   
   /* Hamburger menu */
-  .menu__hamburger {
-    position: absolute; 
-    top: 2rem; 
-    right: 1rem; 
-    z-index: 1000;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 30px;
-    width: 40px;
-    cursor: pointer;
-  }
-  
-  .menu__line {
-    height: 4px;
-    width: 100%;
-    background-color: #333;
-    transition: transform 0.3s ease, opacity 0.3s ease;
-  }
-  
-  /* Hamburger animation when active */
-  .menu__hamburger.active .menu__line:nth-child(1) {
-    transform: translateY(10px) rotate(45deg);
-  }
-  
-  .menu__hamburger.active .menu__line:nth-child(2) {
-    opacity: 0;
-  }
-  
-  .menu__hamburger.active .menu__line:nth-child(3) {
-    transform: translateY(-10px) rotate(-45deg);
-  }
+  .menu {
+    &__hamburger {
+      position: absolute; 
+      top: 2rem; 
+      right: 2rem; 
+      z-index: 1000;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-around;
+      height: 30px;
+      width: 40px;
+      cursor: pointer;
+    }
+    
+    &__line {
+      height: 4px;
+      width: 100%;
+      background-color: #333;
+      transition: transform 0.3s ease, opacity 0.3s ease;
+    }
+    
+    /* Hamburger animation when active */
+    &__hamburger.active .menu__line:nth-child(1) {
+      transform: translateY(10px) rotate(45deg);
+    }
+    
+    &__hamburger.active .menu__line:nth-child(2) {
+      opacity: 0;
+    }
+    
+    &__hamburger.active .menu__line:nth-child(3) {
+      transform: translateY(-10px) rotate(-45deg);
+    }
+
+    &__item:last-child .menu__link {
+      color: white; 
+      background-color: purple;
+      padding: 0.5rem 1rem;
+      border-radius: 10px;
+      padding-left: 1rem;
+    }
+}

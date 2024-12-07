@@ -20,29 +20,69 @@
 
     &__label {
       font-weight: 600;
-      color: rgb(131, 129, 129);
+      color: colors.$color-body;
+    }
+
+    &__button {
+      font-size: 1rem;
+      padding: 0.5rem;
+      color: white;
+      background-color: purple;
+      border: none;
+      border-radius: 5px;
+      width: 100px;
+    }
+    
+    &__button:hover {
+      background-color: colors.$color-hover;
+    }
+}
+
+.data {
+  &__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 2rem;
+  height: 2rem;
+  border-radius: 5px;
+  background-color: colors.$color-primary;
+  text-decoration: none;
+  margin-right: 1rem;
   }
 
-  &__button {
-    font-size: 1rem;
-    padding: 0.5rem;
-    color: white;
-    background-color: purple;
-    border: none;
-    border-radius: 5px;
-  }
-  
-  &__button:hover {
-    background-color: rgb(78, 1, 78);
+  &__contact-tel,
+  &__contact-link {
+    text-decoration: none;
+    color: colors.$color-body;
   }
 }
 
-.data__button {
-  display: inline-block;
-  background-color: purple;
-  color: white;
-  text-decoration: none;
-  padding: 0.3rem 0.8rem;
-  border-radius: 5px;
-  margin-right: 1rem;
+.thanks {
+  padding: 4rem 0;
+  margin: 2rem 0;
+  border-radius: 10px;
+  text-align: center;
+
+  &__link {
+    text-decoration: none;
+    color: colors.$color-body;
+  }
+}
+
+@media screen and (min-width: 1000px) {
+  .contact__container {
+    display: grid;
+    grid-template-columns: 2fr 1fr;
+  }
+
+  .data {
+    grid-column: 2/3;
+    grid-row: 1/3;
+    padding-left: 2rem;
+
+    &__title {
+      margin: 1rem 0;
+    }
+  }
 }

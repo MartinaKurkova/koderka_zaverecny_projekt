@@ -1,6 +1,9 @@
 @use "colors"; 
 
-html { box-sizing: border-box; }
+html { 
+  box-sizing: border-box; 
+  background-color: colors.$color-secondary;
+}
 *, ::after, ::before { box-sizing: inherit; }
 
   body {
@@ -9,18 +12,31 @@ html { box-sizing: border-box; }
     font-style: normal;
     font-size: 1rem;
     line-height: 1.5;
-    color:#0D0D0D;
+    color: colors.$color-body;
 	  margin: auto 0;
 	  padding: 0;
+    background-color: white;
   }
 
   h1, h2, h3, h4, h5, h6 {
     font-family: "Barlow", serif;
     font-weight: 800;
     font-style: normal;
-    
   }
 
 .main {
-  margin: 1.5rem;
+  margin: auto;
+  padding: 1.5rem;
+  max-width: 1100px;
+  width: 100%;
 }  
+
+h1 {
+  font-size: 1.8em;
+  margin-top: 0;
+}
+
+h2 {
+  font-size: 1.3em;
+  margin-top: 1.3em;
+}
