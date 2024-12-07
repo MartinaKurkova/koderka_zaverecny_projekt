@@ -103,6 +103,9 @@ h2 {
   font-size: 1.2rem;
   padding-left: 20px;
 }
+.menu__item--active {
+  font-weight: bold;
+}
 
 /* Desktop */
 @media screen and (min-width: 700px) {

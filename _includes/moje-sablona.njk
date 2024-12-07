@@ -19,10 +19,10 @@
         </h1>
         <nav class="header__nav">
             <ul class="menu menu--hidden">
-                <li class="menu__item"><a href="/" class="menu__link">Portfolio</a></li>
-                <li class="menu__item"><a href="/o_mne/" class="menu__link">O mně</a></li>
-                <li class="menu__item"><a href="/obchod/" class="menu__link">Obchod</a></li>
-                <li class="menu__item"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == '' }}"><a href="/" class="menu__link">Portfolio</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'o_mne' }}"><a href="/o_mne/" class="menu__link">O mně</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'obchod' }}"><a href="/obchod/" class="menu__link">Obchod</a></li>
+                <li class="menu__item {{ 'menu__item--active' if page.fileSlug == 'kontakt'}}"><a href="/kontakt/" class="menu__link">Kontakt</a></li>
             </ul>
             <div class="menu__hamburger">
                 <span class="menu__line"></span>
