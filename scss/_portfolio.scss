@@ -100,4 +100,18 @@
         grid-column: 1/3;
         grid-row: 2/3;
     }
+
+    .portfolio {
+        &__gallery {
+            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+        }
+    }
+}
+
+@media screen and (min-width: 62.5rem) {
+    .portfolio {
+        &__gallery {
+            grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+        }
+}
 }
