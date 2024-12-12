@@ -82,7 +82,18 @@
     gap: 2em;
 }
 
-@media screen and (min-width: 50rem) {
+.description {
+    &__link {
+        color: colors.$color-body;
+        text-decoration: none;
+    }
+
+    &__label{
+        font-weight: bold;
+    }
+}
+
+@media screen and (min-width: 700px) {
     .project {
         grid-template-columns: 3fr, 2fr;
     }
@@ -103,12 +114,16 @@
 
     .portfolio {
         &__gallery {
-            grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+            grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+        }
+
+        &__caption {
+            font-size: 1em;
         }
     }
 }
 
-@media screen and (min-width: 62.5rem) {
+@media screen and (min-width: 1000px) {
     .portfolio {
         &__gallery {
             grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));

@@ -151,8 +151,8 @@ h2 {
 }
 .menu__hamburger {
   position: absolute;
-  top: 2rem;
-  right: 2rem;
+  top: 2.5em;
+  right: 2em;
   z-index: 1000;
   display: flex;
   flex-direction: column;
@@ -195,6 +195,16 @@ h2 {
 .footer__text, .footer__claim {
   margin: 0;
   font-size: 0.8rem;
+}
+.footer__button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  width: 1.5em;
+  height: 1.5em;
+  border-radius: 5px;
+  text-decoration: none;
+  margin: 1em 0.5em;
 }
 
 .wrapper {
@@ -275,7 +285,15 @@ h2 {
   gap: 2em;
 }
 
-@media screen and (min-width: 50rem) {
+.description__link {
+  color: #333;
+  text-decoration: none;
+}
+.description__label {
+  font-weight: bold;
+}
+
+@media screen and (min-width: 700px) {
   .project {
     grid-template-columns: 3fr, 2fr;
   }
@@ -291,10 +309,13 @@ h2 {
     grid-row: 2/3;
   }
   .portfolio__gallery {
-    grid-template-columns: repeat(auto-fill, minmax(15rem, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
+  }
+  .portfolio__caption {
+    font-size: 1em;
   }
 }
-@media screen and (min-width: 62.5rem) {
+@media screen and (min-width: 1000px) {
   .portfolio__gallery {
     grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
   }
@@ -335,7 +356,7 @@ h2 {
   width: 2rem;
   height: 2rem;
   border-radius: 5px;
-  background-color: purple;
+  background-color: #946691;
   text-decoration: none;
   margin-right: 1rem;
 }
