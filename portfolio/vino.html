@@ -3,33 +3,60 @@ layout: moje-sablona.njk
 title: Vinařství
 ---
 
+<div class="project">
+
     <!-- Description -->
     <section class="description">
         <h1 class="description__title">Vinařství</h1>
         
         <div class="description__content">
-            <p>Pro pobočku Národního zemědělského muzea ve Valticích jsem vytvořila grafiku pro expozici věnovanou vinařství. Součástí zakázky bylo zpracování několika nástěnných panelů s infografikami, které návštěvníkům přibližují zajímavosti o víně – od pěstování vinné révy až po jeho výrobu.</p>
+            <p>Pro pobočku Národního zemědělského muzea ve Valticích jsem vytvořila grafiku pro expozici věnovanou vinařství. Součástí zakázky bylo zpracování několika nástěnných panelů s infografikami, které návštěvníkům přibližují zajímavosti o víně - od pěstování vinné révy až po jeho výrobu.</p>
 
             <p>Kromě ilustrací jsem navrhla také celkovou grafiku panelů, přičemž jsem kladla důraz na přehlednost, estetiku a propojení vizuálních prvků s obsahem. Tato práce pro mě byla srdeční záležitostí, protože sama pocházím z rodiny s dlouholetou tradicí vinohradnictví, a k tématu jsem měla tedy velmi blízko.
             </p>
             
             <p>Expozice představuje spojení odborných informací, moderní grafiky a ilustrací, které společně vytvářejí poutavý a vzdělávací zážitek pro všechny návštěvníky.</p>
+
+            <p><span class="description__label">Zadavatel:</span> <a class="description__link" href="https://www.nzm.cz/navstivte-nas/oteviraci-doba/nzm-valtice">Národní zemědělské muzeum, Valtice</a></p>
         </div>
     </section>
 
-    
     <!-- Gallery -->
     <section class="gallery">
         <div class="gallery__item">
-            <img class="gallery__image" src="/images/vino/sklep.webp" alt="Sklep">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/vino/odrudy.webp">
+                <img class="gallery__image" src="/images/vino/odrudy.webp" alt="Odrudy">
+            </a>
         </div>
+
         <div class="gallery__item">
-            <img class="gallery__image" src="/images/vino/odrudy.webp" alt="Odrudy">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/vino/sklep-01.webp">
+                <img class="gallery__image" src="/Thumbnails/vino/sklep-01.webp" alt="Sklep">
+            </a>
         </div>
+        
         <div class="gallery__item">
-            <img class="gallery__image" src="/images/vino/kruh_Kreslicí plátno 1.webp" alt="Rok vinare">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/vino/rok_na_vinici-01.webp">
+                <img class="gallery__image" src="/Thumbnails/vino/rok_na_vinici-01.webp" alt="Rok na vinici">
+            </a>
+        </div>
+
+        <div class="gallery__item">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/vino/parovani.webp">
+                <img class="gallery__image" src="/images/vino/parovani.svg" alt="Parovani vina">
+            </a>
+        </div>
+
+        <div class="gallery__item">
+            <a class="gallery__link" data-fslightbox="gallery" href="/images/vino/sklenice.webp">
+                <img class="gallery__image" src="/Thumbnails/vino/sklenice.webp" alt="Sklenice na vino">
+            </a>
         </div>
     </section>
+
+<!-- Include fslightbox.js in your project -->
+<script src="https://cdn.jsdelivr.net/npm/fslightbox"></script>
+    
 
 
 <!-- Navigation -->
@@ -40,3 +67,5 @@ title: Vinařství
 </nav>
 
 <script src="fslightbox.js"></script>
+
+</div>

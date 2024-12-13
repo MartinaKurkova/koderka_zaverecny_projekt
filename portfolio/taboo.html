@@ -3,6 +3,8 @@ layout: moje-sablona.njk
 title: Taboo
 ---
 
+<div class="project">
+
     <!-- Description -->
     <section class="description">
         <h1 class="description__title">Bohemian Taboo Stories</h1>
@@ -13,19 +15,35 @@ title: Taboo
             <p>Moje ilustrace jsou laděny do tónů růžové a nejsou explicitní – spíše naznačují a pracují s fantazií, aby podtrhly estetiku a hloubku vyprávěných příběhů. Cílem bylo vizuálně doplnit texty tak, aby čtenáře inspirovaly, navodily příjemnou atmosféru a zůstaly v souladu s hravým a citlivým přístupem celé knihy.</p>
             
             <p>Byla jsem jednou z autorek ilustrací, které tuto publikaci doprovázejí, a mám radost, že jsem mohla přispět ke vzniku knihy, jež otevírá důležitá témata a boří stereotypy v pohledu na sexualitu. Bohemian Taboo Stories je unikátním projektem nejen díky svému obsahu, ale i díky výjimečnému grafickému a výtvarnému zpracování, které osloví každého, kdo se nebojí podívat na věci z nového úhlu.</p>
+
+            <p><span class="description__label">Autor textů:</span> Michal Rejzek,kol.</p>
         </div>
     </section>
-
 
     <!-- Gallery -->
-    <section class="gallery">
-        <div class="gallery__item">
+<section class="gallery">
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/taboo/taboo_janis_1.webp">
             <img class="gallery__image" src="/images/taboo/taboo_janis_1.webp" alt="Taboo sbirka">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/taboo/taboo_vanecek_2.webp" alt="Taboo banan">
-        </div>
-    </section>
+        </a>
+    </div>
+
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/taboo/taboo_vanecek_2.webp">
+            <img class="gallery__image" src="/Thumbnails/taboo/taboo_vanecek_2.webp" alt="Taboo banan">
+        </a>
+    </div>
+    
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/taboo/taboo_malinova_2.webp">
+            <img class="gallery__image" src="/Thumbnails/taboo/taboo_malinova_2.webp" alt="Taboo Malinova">
+        </a>
+    </div>
+</section>
+
+<!-- Include fslightbox.js in your project -->
+<script src="https://cdn.jsdelivr.net/npm/fslightbox"></script>
+
 
 
 <!-- Navigation -->
@@ -36,3 +54,5 @@ title: Taboo
 </nav>
 
 <script src="fslightbox.js"></script>
+
+</div>
