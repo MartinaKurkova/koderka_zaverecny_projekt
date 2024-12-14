@@ -2,9 +2,9 @@
 layout: moje-sablona.njk
 title: Oskare, plav!
 ---
-    
+<div class="project">   
     <!-- Description -->
-    <section class="description">
+    <div class="description">
         <h1 class="description__title">Oskare, plav!</h1>
         
         <div class="description__content">
@@ -14,44 +14,73 @@ title: Oskare, plav!
                 
             <p>Kniha Oskare, plav! byla oceněna za svou originalitu a zařazena do katalogu Nejlepší knihy dětem, který vybírá výjimečné publikace pro mladé čtenáře.</p>
 
-            <p>Nakladatelství: <a href="https://pop-pap.cz/">POP-PAP</a></p>
-            <p>Autor textu: Lukáš Csicsely</p>
-            <p>Grafická úprava: Tereza Šmídová</p>
+            <p><span class="description__label">Nakladatelství:</span> <a class="description__link" href="https://pop-pap.cz/">POP-PAP</a></p>
+            <p><span class="description__label">Autor textu:</span>Lukáš Csicsely</p>
+            <p><span class="description__label">Grafická úprava:</span>Tereza Šmídová</p>
         </div>
-    </section>
+    </div>
 
+        <!-- Gallery -->
+<div class="gallery">
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_obalka.webp">
+            <img class="gallery__image" src="/images/oskar/oskare_plav_obalka.webp" alt="Oskare, plav obalka">
+        </a>
+    </div>
 
-    <!-- Gallery -->
-    <section class="gallery">
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_obalka.jpg" alt="Oskare, plav! obalka">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_oskarek.svg" alt="Oskare, plav! Oskar">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_cesta.svg" alt="Oskare, plav! cesta">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_tuleni.svg" alt="Oskare, plav! tuleni">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_komiks.svg" alt="Oskare, plav! komiks">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_oskarek_foto.webp" alt="Oskare, plav! Oskar foto">
-        </div>
-        <div class="gallery__item">
-            <img class="gallery__image" src="/images/oskar/oskare_plav_tuleni_smich.webp" alt="Oskare, plav! tuleni smich">
-        </div>
-    </section>
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_oskarek.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_oskarek.webp" alt="Oskare, plav Oskarek">
+        </a>
+    </div>
+    
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_cesta.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_cesta.webp" alt="Oskare, plav cesta">
+        </a>
+    </div>
 
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_tuleni.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_tuleni.webp" alt="Oskare, plav tuleni">
+        </a>
+    </div>
+
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_komiks.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_komiks.webp" alt="Oskare, plav komiks">
+        </a>
+    </div>
+
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_komiks.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_komiks.webp" alt="Oskare, plav komiks">
+        </a>
+    </div>
+
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_oskarek_foto.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_oskarek_foto.webp" alt="Oskare, plav foto">
+        </a>
+    </div>
+
+    <div class="gallery__item">
+        <a class="gallery__link" data-fslightbox="gallery" href="/images/oskar/oskare_plav_tuleni_smich.webp">
+            <img class="gallery__image" src="/Thumbnails/oskar/oskare_plav_tuleni_smich.webp" alt="Oskare, plav tuleni smich">
+        </a>
+    </div>
+</div>
+
+<!-- Include fslightbox.js in your project -->
+<script src="https://cdn.jsdelivr.net/npm/fslightbox"></script>
 
 <!-- Navigation -->
 <nav class="project-navigation">
-    <a href="previous-project.html" class="project-navigation__link project-navigation__link--previous">&larr; Předchozí projekt</a>
+    <a href="/portfolio/statistiky" class="project-navigation__link project-navigation__link--previous">&larr; Předchozí projekt</a>
     <a href="/" class="project-navigation__link project-navigation__link--back">Zpátky do portfolia</a>
-    <a href="next-project.html" class="project-navigation__link project-navigation__link--next">Následující projekt &rarr;</a>
+    <a href="/portfolio/pexesa" class="project-navigation__link project-navigation__link--next">Následující projekt &rarr;</a>
 </nav>
 
 <script src="fslightbox.js"></script>
+
+</div>

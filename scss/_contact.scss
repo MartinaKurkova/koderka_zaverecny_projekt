@@ -27,9 +27,9 @@
       font-size: 1rem;
       padding: 0.5rem;
       color: white;
-      background-color: purple;
+      background-color: colors.$color-primary;
       border: none;
-      border-radius: 5px;
+      border-radius: 0.5em;
       width: 100px;
     }
     
@@ -45,7 +45,7 @@
   align-items: center;
   width: 2rem;
   height: 2rem;
-  border-radius: 5px;
+  border-radius: 0.5em;
   background-color: colors.$color-secondary;
   text-decoration: none;
   margin-right: 1rem;

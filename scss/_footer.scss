@@ -5,13 +5,13 @@
     color: white;
     text-align: center;
     margin: 0;
-    padding: 1.5rem;
+    padding: 1.5em;
     width: 100%; 
   
     &__text,
     &__claim {
         margin: 0;
-        font-size: 0.8rem;
+        font-size: 0.8em;
     }
 
     &__button {
@@ -20,13 +20,8 @@
       align-items: center;
       width: 1.5em;
       height: 1.5em;
-      border-radius: 5px;
+      border-radius: 0.5em;
       text-decoration: none;
       margin: 1em 0.5em;
       }
-  }
-
-  .wrapper {
-    position: relative;
-    min-height: 100vh; 
   }

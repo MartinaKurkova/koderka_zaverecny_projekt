@@ -4,7 +4,7 @@
 .portfolio {
     &__gallery {
         display: grid;
-        grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+        grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
         gap: 1rem; 
     }
 
@@ -49,7 +49,7 @@
 
 .gallery {
     display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-template-columns: repeat(auto-fill, minmax(12.5rem, 1fr));
     gap: 1em; 
 
     &__image {
@@ -93,7 +93,7 @@
     }
 }
 
-@media screen and (min-width: 700px) {
+@media screen and (min-width: 43.75rem) {
     .project {
         grid-template-columns: 3fr, 2fr;
     }
@@ -123,7 +123,7 @@
     }
 }
 
-@media screen and (min-width: 1000px) {
+@media screen and (min-width: 62.5rem) {
     .portfolio {
         &__gallery {
             grid-template-columns: repeat(auto-fill, minmax(18.75rem, 1fr));
